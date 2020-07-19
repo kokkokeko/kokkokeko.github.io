@@ -1,1 +1,166 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is a kokko's portfolio page.">
+  <meta name="author" content="Kokko">
+  <title>kokkoのポートフォリオ</title>
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap"  -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <ul>
+        <li class="contents"><a href="#home">Home</a></li>
+        <li class="contents"><a href="#about">About</a></li>
+        <li class="contents"><a href="#work">Work</a></li>
+        <li class="contents"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h1>初めまして、久貝です。</h1>
+    <p>webエンジニアを目指しています。</p>
+  </section>
+  <section id="work" class="container">
+    <h2>プロジェクト一覧</h2>
+    <div class="projects">
+      <div>
+        <img src="images/Einstein.png">
+        <div class="project-detail">
+        <h3>トリビュートページ</h3>
+        <p>HTML,CSSのプロジェクト。ウェブページを作成する際の初期設定を学ぶ。</p>
+        <a href="https://codepen.io/kokkokeko/full/jOWvpad">アプリを触ってみる。</a>
+        <a href="images/Einstein.gif">gifでみる。</a>
+        <a href="https://codepen.io/kokkokeko/pen/jOWvpad">コードをみる。</a>
+        <p>キーワード：セマンティクス、google font、ress.css</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="images/memoApp.jpg">
+        <div class="project-detail">
+        <h3>メモアプリ</h3>
+        <p>DOM操作の練習として作成。CRUD機能、フィルタリング機能。</p>
+        <a href="https://romantic-lewin-9933f9.netlify.app/">アプリを触ってみる。</a>
+        <a href="images/output.gif">gifでみる。</a>
+        <a href="https://github.com/kokkokeko/memoApp">コードをみる。</a>
+        <p>キーワード：javascript, DOM</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="container">
+    <h2>私について</h2>
+    
+  <section id="self-introduction">
+    <h3>自己紹介</h3>
+    <p>初めまして。現在webエンジニアを目指しています。久貝です。2019年10月よりNode.js, Express, MongoDBを独学しました。2020年6月からはHTML, CSS, Javascript, Reactを学習しています。IT業界の職務について、インターン、アルバイト含め実務経験はありません。希望としてはフロントエンド、バックエンドこだわりなく経験してみたいと考えております。会津大学コンピュータ理工学部2019年卒。卒論ではDeep Q Networkを使用して7x7格子の簡素なパックマンゲームを学習するプログラムを作成。</p>
+    <br>
+  </section>
+  <section class="skills">
+    <table>
+        <thead><h3>技術、スキルセット</h3></thead>
+        <tbody>
+        <tr col="row">
+        <th>HTML, CSS</th>
+        <td>レスポンシブウェブサイトを制作できる。MDN Web Docsを利用できる。BEM（予定）, SASS（予定）</td>
+        </tr>
+        <tr col="row">
+          <th>Javscript</th>
+          <td>Todoアプリが作れる。ECMAScript, DOM API, Fetch API, Promise, JSON, オブジェクト指向プログラミング（予定）</td>
+          </tr>
+        <tr col="row">
+          <th>React</th>
+          <td>Main Conceptの技術を使ったアプリ開発（予定）</td>
+          </tr>
+          <tr col="row">
+            <th>Vue</th>
+            <td>基本コンセプトとvuex, vue-routerがわかる。</td>
+            </tr>
+        <tr col="row">
+           <th>Node.js, Express</th>
+            <td>APIを実装できる。単体テストができる。RESTful API, Mocha, Chai, phantomJS, HelmetJS, passport, localAuth, githubAuth, Socket.io</td>
+            </tr>
+            <tr col="row">
+              <th>MongoDB, Mongoose</th>
+            <td>CRUD機能を実装できる。ドキュメントが読める。</td>
+            </tr>
+            <tr col="row">
+              <th>MySQL</th>
+            <td>基本的な問い合わせができる。ドキュメントが読める。</td>
+            </tr>          
+            <tr col="row">
+            <tr col="row">
+              <th>Git, Github</th>
+            <td>コミットできる。</td>
+            </tr>
+            <tr col="row">
+              <th>プログラミング</th>
+            <td>PaizaのA問題を解くことができる。基本的なアルゴリズムとデータ構造を理解できる。</td>
+            </tr>
+      </tbody>
+      </table>
+    
+      </section>
+  <section id="basic-information">
+    
+    <table>
+      <thead><h3>基本情報</h3></thead>
+      <tbody>
+      <tr col="row">
+      <th>性別</th>
+      <td>男性 / 独身</td>
+    </tr>
+    <tr col="row">
+      <th>生年月日</th>
+      <td>1996年4月9日（火</td>      
+    </tr>
+    <tr col="row">
+      <th>現在の状況</th>
+      <td>無職</td>
+    </tr>
+    <tr col="row">
+      <th>学歴</th>
+      <td>会津大学コンピュータ理工学部2019年卒</td>
+    </tr>
+    <tr col="row">
+      <th>アルバイト経験</th>
+      <td>塾講師、ホテル業</td>
+    </tr>
+    <tr col="row">
+      <th>住所</th>
+      <td>千葉県船橋市（現在は浅草のホステルに滞在中</td>
+    </tr>
+    <tr col="row">
+      <th>出身地</th>
+      <td>沖縄県宮古島市</td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+  
+  </section>
+
+  <section id="contact" class="container">
+    <h2>一緒に働きましょう！</h2>
+    <p>お茶でも飲みませんか？</p>
+    <div class="contact-links">
+      <a href="www.linkedin.com/in/kojiro-kugai-1011b21a4"><img src="images/LI-In-Bug.png" width="20" height="20"">Linked In</a>
+      <a href="https://github.com/kokkokeko"><img src="images/GitHub-Mark-120px-plus.png" width="20" height="20"">GitHub</a>
+      <a href="https://twitter.com/kokko55kugai"><img src="images/Twitter_Social_Icon_Circle_Color.svg" width="20" height="20"">Twitter</a>
+      <a href="https://www.wantedly.com/users/99935756"><img src="images/wantedly_mark.svg" width="20" height="20"">Wantedly</a>
+    </div>
+    
+  </section>
+  <footer id="footer">
+    <small>Copyright &copy; 2020 Kojiro kugai, jobless man</small>
+  </footer>
+</body>
+</html>
