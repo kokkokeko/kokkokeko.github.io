@@ -26,6 +26,7 @@
 
   <section id="work" class="container">
     <h2>プロジェクト一覧</h2>
+    <h3>フロントエンド</h3>
     <div class="projects">
       <div>
         <img src="images/Einstein.png">
@@ -61,6 +62,83 @@
         <p>キーワード：React, netlify</p>
         </div>
       </div>
+    </div>
+    <h3>バックエンド</h3>
+
+    <div class="projects">
+      <div>
+        <div class="project-detail">
+        <h3>タイムスタンプ</h3>
+        <ol>
+          <li>エンドポイント：[projecturl]/api/timestamp/:date_string</li>
+        <li>date_stringで指定した日のunix時間、UTCをJSONで応答します</li>
+        <li>適切：JSONでタイムスタンプを送信</li>
+        <li>不適切：JSONでエラーを送信</li>
+        <li>例：$ curl https://nimble-nephew.glitch.me/api/timestamp/2015-11-22</li>
+      </ol>
+        <a href="https://nimble-nephew.glitch.me/">アプリを触ってみる。</a>
+        <a href="https://glitch.com/edit/#!/nimble-nephew">コードをみる。</a>
+        <p>キーワード：Date、正規表現、JSON、UTC</p>
+        </div>
+      </div>
+    
+      <div>
+        <div class="project-detail">
+        <h3>リクエストヘッダー解析</h3>
+        <ol>
+          <li>エンドポイント： [base url]/api/whoami </li>
+        <li>クライアントのHTTPヘッダーを確認します</li>
+        <li>ipアドレス、ブラウザの言語、ブラウザとOS情報を取得する</li>
+        <li>例：$ curl https://cuboid-centaur.glitch.me/api/whoami</li>
+      </ol>
+        <a href="https://cuboid-centaur.glitch.me/">アプリを触ってみる。</a>
+        <a href="https://glitch.com/edit/#!/cuboid-centaur">コードをみる。</a>
+        <p>キーワード：HTTPヘッダー、IPアドレス</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="project-detail">
+        <h3>アップロードされたファイルの解析</h3>
+        <ol>
+          <li>フォームからメディアファイルをアップロードすると情報を返します</li>
+        <li>ファイル名、MIMEタイプ、ファイルサイズ</li>
+      </ol>
+        <a href="https://zany-canidae.glitch.me/">アプリを触ってみる。</a>
+        <a href="https://glitch.com/edit/#!/zany-canidae">コードをみる。</a>
+        <p>キーワード：multer 、ファイルシステム</p>
+        </div>
+      </div>
+      <div>
+          <div class="project-detail">
+          <h3>URL変換&保存マイクロサービス</h3>
+          <ol>
+            <li>フォームから好きなサイトのURLを送信するとハッシュ値に変換する</li>
+            <li>ハッシュ値を使ってAPIを叩くと元のURLに移動する</li>
+            <li>例：www.twitter.comまたはhttps://twitter.comを送信</li>
+            <li>[app_url]/api/shorturl/[ハッシュ値]</li>
+        </ol>
+          <a href="https://economic-goldenrod.glitch.me">アプリを触ってみる。</a>
+          <a href="https://glitch.com/edit/#!/economic-goldenrod">コードをみる。</a>
+          <p>キーワード：dns、bcrypt、正規表現、ハッシュ関数、Promise、async/await、リダイレクト</p>
+          </div>
+      </div>
+
+      <div>
+        <img src="images/exercisetracker.jpeg">
+        <div class="project-detail">
+        <h3>エクササイズトラッカー</h3>
+        <ol>
+          <li>フォームからユーザー登録をするとユーザID(ハッシュ値）が返される</li>
+          <li>GET [projecturl]/api/exercise/usersでユーザ一覧取得</li>
+          <li>フォームからユーザID、エクササイズ名、時間、日にちを登録する</li>
+          <li>GET [projecturl] /api/exercise/log?userId=[ユーザID][, &from=いつから][, &to=いつまで][, &limit=表示数]で登録したエクササイズを確認できる（from, to, limitは任意）</li>
+      </ol>
+        <a href="https://whispering-mesa-41929.herokuapp.com/">アプリを触ってみる。</a>
+        <a href="https://github.com/kokkokeko/Exercise-Tracker/blob/errhandle/server.js">コードをみる。</a>
+        <p>キーワード：heroku、mongoDB Atlas、mongooseスキーマ、環境変数、バリデーションチェック、Promiseチェーン、エラーハンドリング</p>
+        </div>
+    </div>
     </div>
   </section>
   <section id="about" class="container">
