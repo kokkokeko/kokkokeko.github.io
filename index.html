@@ -16,17 +16,14 @@
   <header id="header">
     <nav>
       <ul>
-        <li class="contents"><a href="#home">Home</a></li>
+        <li class="contents"><a href="#home">Kokko's Portfolio</a></li>
         <li class="contents"><a href="#about">About</a></li>
         <li class="contents"><a href="#work">Work</a></li>
         <li class="contents"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <section id="home">
-    <h1>初めまして、久貝です。</h1>
-    <p>webエンジニアを目指しています。</p>
-  </section>
+
   <section id="work" class="container">
     <h2>プロジェクト一覧</h2>
     <div class="projects">
@@ -43,7 +40,7 @@
       </div>
 
       <div>
-        <img src="images/memoApp.jpg">
+        <img src="images/memoApp.jpeg">
         <div class="project-detail">
         <h3>メモアプリ</h3>
         <p>DOM操作の練習として作成。CRUD機能、フィルタリング機能。</p>
@@ -51,7 +48,17 @@
         <a href="images/output.gif">gifでみる。</a>
         <a href="https://github.com/kokkokeko/memoApp">コードをみる。</a>
         <p>キーワード：javascript, DOM</p>
-
+        </div>
+      </div>
+      <div>
+        <img src="images/memory-game.jpeg">
+        <div class="project-detail">
+        <h3>神経衰弱ゲーム</h3>
+        <p>Reactフレーム枠の練習。ゲームロジック作成。</p>
+        <a href="https://gracious-goldstine-25e31b.netlify.app/">アプリを触ってみる。</a>
+        <a href="images/memory-game.gif">gifでみる。</a>
+        <a href="https://github.com/kokkokeko/memory-game/blob/master/src/App.js">コードをみる。</a>
+        <p>キーワード：React, netlify</p>
         </div>
       </div>
     </div>
@@ -61,12 +68,21 @@
     
   <section id="self-introduction">
     <h3>自己紹介</h3>
-    <p>初めまして。現在webエンジニアを目指しています。久貝です。2019年10月よりNode.js, Express, MongoDBを独学しました。2020年6月からはHTML, CSS, Javascript, Reactを学習しています。IT業界の職務について、インターン、アルバイト含め実務経験はありません。希望としてはフロントエンド、バックエンドこだわりなく経験してみたいと考えております。会津大学コンピュータ理工学部2019年卒。卒論ではDeep Q Networkを使用して7x7格子の簡素なパックマンゲームを学習するプログラムを作成。</p>
+    <p> 現在ITエンジニアとして求職中。2019年3月会津大学コンピュータ理工学部卒業。2019年5月から3ヶ月間、派遣社員として奥日光小西ホテルにてフロント業務に従事。その後freecodecamp、MDN Web Devなどを利用してweb技術を独学。卒業論文では強化学習を用いて7x7格子の簡単なパックマンゲームを学習するプログラムを作成。</p>
     <br>
   </section>
   <section class="skills">
+    
     <table>
         <thead><h3>技術、スキルセット</h3></thead>
+        <h4>概要</h4>
+      <ul>
+      <li>node.js, express, MongoDB, MySQLを使用したバックエンドAPI開発</li>
+      <li>html, css, javascript, reacts, vuejsを用いたフロントエンド開発</li>
+      <li>HTTP通信</li>
+      <li>python, tensorflowフレームワークを使用した畳み込みニューラルネットワーク構築</li>
+    </ul>
+    <h4>具体例</h4>
         <tbody>
         <tr col="row">
         <th>HTML, CSS</th>
@@ -78,7 +94,7 @@
           </tr>
         <tr col="row">
           <th>React</th>
-          <td>Main Conceptの技術を使ったアプリ開発（予定）</td>
+          <td>Main Conceptの技術を使ったアプリ開発</td>
           </tr>
           <tr col="row">
             <th>Vue</th>
@@ -99,12 +115,21 @@
             <tr col="row">
             <tr col="row">
               <th>Git, Github</th>
-            <td>コミットできる。</td>
+            <td> 基本的な開発フローがわかる。</td>
             </tr>
             <tr col="row">
               <th>プログラミング</th>
             <td>PaizaのA問題を解くことができる。基本的なアルゴリズムとデータ構造を理解できる。</td>
             </tr>
+            <tr col="row">
+              <th>Python, Tensorflow</th>
+            <td>畳み込みニューラルネットワーク実装、ログ取得、グラフ作成。</td>
+            </tr>
+            <tr col="row">
+              <th>C, Java</th>
+            <td>大学の講義で使用</td>
+            </tr>
+          
       </tbody>
       </table>
     
@@ -136,14 +161,23 @@
     </tr>
     <tr col="row">
       <th>住所</th>
-      <td>千葉県船橋市（現在は浅草のホステルに滞在中</td>
+      <td>千葉県船橋市（現在は浅草に滞在中</td>
     </tr>
     <tr col="row">
       <th>出身地</th>
       <td>沖縄県宮古島市</td>
     </tr>
+
     </tbody>
+
   </table>
+  <section id="self-produce">
+<h3>自己PR</h3>
+      <h4>自分で調べ課題を解決する力</h4>
+        <p>プログラミングでのエラーや新しい技術を学ぶ際に自分で調べ課題を解決できる力があります。ウェブ技術は広範なため自分で調べる力が必要です。独学をしていく中で、公式ドキュメントやStackoverflowなどを使用して課題解決をする習慣を付けました。</p>
+      <h4>すぐに働ける状態で、早く現場で経験を積みたい思いがある</h4>
+        <p>IT業界では日々技術が更新されていることや個人開発では得られない、実際に現場で働くことで得られる知識があると聞いています。すぐにでも仕事に就き、現場での開発経験を少しでも多く積みたいと考えています。現在定職やアルバイト等をしていないので採用を受け次第、すぐに働けます。</p>
+      
 </section>
   
   </section>
